@@ -8,6 +8,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-image: url("./assets/pexels-johannes-plenio-1103970.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html {
@@ -148,6 +151,9 @@ section {
 .section-container {
   display: flex;
 }
+.title {
+  text-align: center;
+}
 
 /* profile section */
 
@@ -246,13 +252,15 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about-containers,
 .about-details-container {
   display: flex;
 }
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 5rem;
 }
 .details-container {
   padding: 1.5rem;
@@ -265,7 +273,7 @@ section {
 }
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 60%;
 }
 .section_pic-container {
   height: 400px;
@@ -276,4 +284,59 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+/*Experience*/
+#experience {
+  position: relative;
+}
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+article {
+  display: flex;
+  width: 18rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+article .icon {
+  cursor: default;
+}
+
+/*Projects Section*/
+#projects {
+  position: relative;
+}
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
