@@ -1,9 +1,27 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+  * {
+    padding: 0;
+  }
+
   #desktop-nav {
+    display: none;
+  }
+
+  .nav-links {
     display: none;
   }
 
   #hamburger-nav {
     display: flex;
+    position: fixed;
+  }
+
+  .menu-links {
+    background-color: #d0e7d2;
+  }
+
+  .section_pic-container img {
+    height: 15rem;
+    padding-left: 10rem;
   }
 }

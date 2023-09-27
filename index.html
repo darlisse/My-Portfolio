@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Darlisse Cayra Dumaliang</div>
+      <img src="./assets/DC logo.png" alt="DC Logo" class="logo-pic" />
       <div>
         <ul class="nav-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -36,30 +36,33 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section_pic-container">
-        <img src="./assets/1663145133565-removebg-preview.png" />
-      </div>
+      <!--<div class="section_pic-container">
+        <img src="./assets/meme_cry_kid-removebg-preview.png" />
+      </div>-->
       <div class="section_text">
-        <p class="section_text_p1">Hello I am</p>
-        <h1 class="title">Darlisse Cayra Dumaliang</h1>
-        <p class="section_text_p2">Sawa na sa buhay</p>
+        <p class="section_text_p1">Hey, I am</p>
+        <h1 class="title">Darlisse Cayra S. Dumaliang</h1>
+        <p class="section_text_p2">An aspiring front-end developer</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open()">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Dumaliang_cv.pdf')"
+          >
             Download CV
           </button>
-          <button
+          <!--<button
             class="btn btn-color-1"
             onclick="location.href = './#contact'"
           >
             Contact Info
-          </button>
+          </button>-->
         </div>
         <div id="socials-container">
           <img
-            src="./assets/MicrosoftTeams-image (5).png"
+            src="./assets/LinkedIn.png"
             alt="My LinkedIn Profile"
             class="icon"
-            onclick="location.href='https://linkedin.com'"
+            onclick="location.href='https://www.linkedin.com/in/darlisse-cayra-dumaliang-90b83b198/'"
           />
           <img
             src="./assets/MicrosoftTeams-image (4).png"
@@ -73,19 +76,15 @@
     <section id="about">
       <p class="section_text_p1">Get to Know More</p>
       <h1 class="title">About Me</h1>
+      <div class="section_pic-container">
+        <img src="./assets/meme_cry_kid-removebg-preview.png" />
+      </div>
       <div class="section-container">
-        <div class="section_pic-container">
-          <img
-            src="./assets/369601431_199652273117525_8424493123722079311_n-removebg-preview.png"
-            alt="About Picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/MicrosoftTeams-image (3).png"
+                src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -97,7 +96,7 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/MicrosoftTeams-image (1).png"
+                src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -123,7 +122,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Web Developement</h2>
+            <h2 class="experience-sub-title">Front End</h2>
             <div class="article-container">
               <article>
                 <img
@@ -147,6 +146,68 @@
                   <p>Basic</p>
                 </div>
               </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Editing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/MicrosoftTeams-image.png"
+                  alt="Experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/MicrosoftTeams-image.png"
+                  alt="Experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Animate</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/MicrosoftTeams-image.png"
+                  alt="Experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/MicrosoftTeams-image.png"
+                  alt="Experience-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
               <article>
                 <img
                   src="./assets/MicrosoftTeams-image.png"
@@ -165,8 +226,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>UI Design</h3>
-                  <p>Primitive</p>
+                  <h3>C++</h3>
+                  <p>Basic</p>
                 </div>
               </article>
             </div>
@@ -179,21 +240,56 @@
         class="icon arrow"
         onclick="location.href='#projects'"
       />
+      <!--<div class="outer">
+        <div class="inner">
+          <div id="number">65%</div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <script>
+        let number = document.getElementById("number");
+        let counter = 0;
+        setInterval(() => {
+          if (counter == 65) {
+            clearInterval();
+          } else {
+            counter += 1;
+            number.innerHTML = counter + "%";
+          }
+        }, 25);
+      </script>-->
     </section>
     <section id="projects">
       <p class="section_text_p1">Browse My</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
+        <!--contains all of the details about the user's proj-->
         <div class="about-containers">
+          <!--contain the indivial proj-->
           <div class="details-container color-container">
+            <!--image, title and buttons for each proj-->
             <div class="article-container">
+              <!--contains the proj image-->
               <img src="./assets/" alt="Project 1" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Project One</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/darlisse/BSIS_REPOSITORY'"
+                onclick="location.href='https://github.com/darlisse/Projects'"
               >
                 Github
               </button>
@@ -207,13 +303,54 @@
           </div>
         </div>
       </div>
-      <img
+      <!--<img
         src="./assets/MicrosoftTeams-image (6).png"
         alt="Arrow Icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+        onclick="location.href='./#contact'"
+      />-->
     </section>
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:darlissecayra.dumaliang@tup.edu.ph"
+              >darlissecayra.dumaliang@tup.edu.ph</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/LinkedIn.png"
+            alt="Linked icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169; 2023 Darlisse Cayra Dumaliang. All Rights Reserved.
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+
   /*border: 1px solid red;*/
 }
 
@@ -36,6 +37,8 @@ nav,
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -57,12 +60,10 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-  font-size: 2rem;
-}
-
-.logo:hover {
-  cursor: default;
+.logo-pic {
+  padding: 0;
+  margin: 0;
+  width: 20rem;
 }
 
 /* Hamburger Menu*/
@@ -143,7 +144,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -153,6 +154,9 @@ section {
 }
 .title {
   text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px white;
+  font-variant: small-caps;
 }
 
 /* profile section */
@@ -211,6 +215,7 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.5);
 }
 .btn-color-1,
 .btn-color-2 {
@@ -220,20 +225,15 @@ section {
 .btn-color-2:hover {
   cursor: pointer;
 }
-.btn-color-1,
+
+.btn-color-1:hover,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(0, 0, 0);
   color: white;
 }
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
+.btn-color-1,
 .btn-color-2 {
   background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -242,7 +242,11 @@ section {
 
 /*About Section*/
 #about {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 140vh;
 }
 .about-containers {
   gap: 2rem;
@@ -260,6 +264,7 @@ section {
   display: flex;
 }
 .about-pic {
+  max-width: 400px;
   border-radius: 5rem;
 }
 .details-container {
@@ -270,14 +275,16 @@ section {
   border: rgb(163, 163, 163) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.5);
 }
 .section-container {
   gap: 4rem;
-  height: 60%;
+  height: 20%;
 }
 .section_pic-container {
-  height: 400px;
-  width: 400px;
+  margin: 0 auto;
+  height: 200px;
+  width: 100px;
   margin: auto 0;
 }
 .arrow {
@@ -289,6 +296,7 @@ section {
 /*Experience*/
 #experience {
   position: relative;
+  height: 165vh;
 }
 .experience-sub-title {
   color: rgb(85, 85, 85);
@@ -321,11 +329,12 @@ article .icon {
 
 /*Projects Section*/
 #projects {
+  padding: 0;
   position: relative;
 }
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: rgb(0, 0, 0, 0.5);
 }
 .project-img {
   border-radius: 2rem;
@@ -337,6 +346,102 @@ article .icon {
   color: black;
 }
 .project-btn {
-  color: black;
+  color: white;
   border-color: rgb(163, 163, 163);
+}
+
+/*Contact Section*/
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem;
+  padding: 0.5rem;
+}
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.contact-icon {
+  cursor: default;
+}
+.contact-info-container {
+  font-size: larger;
+}
+.email-icon {
+  height: 2.5rem;
+}
+
+/* Progress Bar
+
+#progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.outer {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number {
+  font-weight: 1000px;
+  color: black;
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+svg {
+  position: absolute;
+  top: 22%;
+  left: 0;
+}
+/*@keyframes anim {
+  100% {
+    stroke-dashoffset: 165; /* Formula: 472-472x0.65*/
+
+/*Footer Section*/
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+footer p {
+  text-align: center;
+  color: black;
 }
