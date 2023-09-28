@@ -242,11 +242,8 @@ section {
 
 /*About Section*/
 #about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 140vh;
+  position: relative;
 }
 .about-containers {
   gap: 2rem;
@@ -256,17 +253,16 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
 }
 .about-containers,
 .about-details-container {
   display: flex;
 }
+
 .about-pic {
-  max-width: 400px;
-  border-radius: 5rem;
+  border-radius: 2rem;
 }
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -282,15 +278,9 @@ section {
   height: 20%;
 }
 .section_pic-container {
-  margin: 0 auto;
-  height: 200px;
-  width: 100px;
-  margin: auto 0;
-}
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  text-align: center;
+  margin-left: 50px;
+  justify-content: right;
 }
 
 /*Experience*/
@@ -302,7 +292,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .experience-details-container {
   display: flex;
@@ -311,11 +301,12 @@ section {
 }
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  flex-grow: 1;
+  gap: 1rem;
 }
 article {
   display: flex;
@@ -329,7 +320,6 @@ article .icon {
 
 /*Projects Section*/
 #projects {
-  padding: 0;
   position: relative;
 }
 .color-container {
@@ -337,9 +327,14 @@ article .icon {
   background: rgb(0, 0, 0, 0.5);
 }
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+  width: 20%;
+  height: 30rem;
+}
+.project-img_1 {
+  border-radius: 1rem;
+  width: 20%;
+  height: 10rem;
 }
 .project-title {
   margin: 1rem;
@@ -354,8 +349,9 @@ article .icon {
 #contact {
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
-  height: 90vh;
+  height: 90rem;
 }
 .contact-info-upper-container {
   display: flex;
@@ -384,9 +380,9 @@ article .icon {
   height: 2.5rem;
 }
 
-/* Progress Bar
+/* Progress Bar */
 
-#progress-bar {
+/*#progress-bar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -432,7 +428,7 @@ svg {
   top: 22%;
   left: 0;
 }
-/*@keyframes anim {
+@keyframes anim {
   100% {
     stroke-dashoffset: 165; /* Formula: 472-472x0.65*/
 
