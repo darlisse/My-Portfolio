@@ -261,6 +261,9 @@ section {
 .btn-container {
   gap: 1rem;
 }
+.btn-container-hidden {
+  visibility: hidden;
+}
 
 /*About Section*/
 #about {
@@ -289,7 +292,17 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: palevioletred;
+
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.5) inset;
+}
+.details-container_1 {
+  padding: 12rem 1.5rem 13rem 1.5rem;
+  flex: 1;
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -317,7 +330,7 @@ section {
   height: 145vh;
 }
 .experience-details-container {
-  padding-top: 1.5rem;
+  padding: 1vh;
 }
 /*#experience::before {
   content: "";
@@ -384,6 +397,7 @@ article .icon {
   background: #007acc;
   transition: width 1s ease;
 }
+
 .progress-label {
   position: absolute;
   right: 5px;
@@ -394,28 +408,75 @@ article .icon {
 }
 
 /*Projects Section*/
+
 #projects {
+  padding-bottom: 20vh;
   position: relative;
   height: fit-content;
 }
+.project-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.project {
+  position: relative;
+  margin: 0;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.project:hover {
+  animation: projectHover 0.5s ease-in-out;
+}
+.project-hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.1s;
+  border-radius: 2rem;
+}
+
+.project:hover .project-hover-info {
+  display: flex;
+  opacity: 1;
+}
+
+/* Additional styling for the project-hover-info */
+.project-hover-info h2 {
+  text-align: center;
+  padding: 10px;
+}
+.hover-info {
+  color: white;
+}
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(0, 0, 0, 0.5);
+  background: rgb(192, 192, 192, 0.4);
 }
 .project-img {
   border-radius: 1rem;
-  width: 50%;
-  height: 20rem;
+  width: 40%;
+  height: 23rem;
 }
 .project-img_1 {
   border-radius: 1rem;
-  width: 40%;
+  width: 30%;
   height: 8rem;
 }
 .project-img_2 {
-  border-radius: none;
-  height: 20rem;
+  height: 100%;
   width: 20rem;
+}
+.project-img_3 {
+  height: 24rem;
+  width: 25rem;
 }
 .project-title {
   margin: 1rem;
@@ -425,6 +486,17 @@ article .icon {
   color: white;
   border-color: rgb(163, 163, 163);
 }
+@keyframes projectHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 /*Contact Section*/
 #contact {
@@ -432,7 +504,6 @@ article .icon {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 90rem;
 }
 .contact-info-upper-container {
   display: flex;
@@ -523,7 +594,7 @@ footer {
   width: 100%; /* Set the width to 100% */
   height: 26vh;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: -1;
 }
 footer p {
