@@ -46,6 +46,11 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  .about-pic {
+  border-radius: 2rem;
+  height: 80%;
+  width: 80%;
+}
 
   .about-containers {
     margin-top: 0;
