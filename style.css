@@ -270,11 +270,6 @@ section {
   position: relative;
 }
 
-/*.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}*/
 .text-container {
   font-size: larger;
 }
@@ -325,65 +320,12 @@ section {
 /*Experience*/
 #experience {
   position: relative;
-  /*padding: 0;
-  margin: 0;*/
   height: 145vh;
 }
 .experience-details-container {
   padding: 1vh;
 }
-/*#experience::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(45deg, #78d6c6, #ff5733, #6e0dd0);
-  background-size: 400% 400%;
-  animation: gradientBackground 5s infinite;
-  opacity: 0.5;
-  z-index: -1;
-}
-@keyframes gradientBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}*/
 
-/*.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  justify-content: center;
-}
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.article-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-grow: 1;
-  gap: 1rem;
-}
-article {
-  display: flex;
-  width: 18rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-article .icon {
-  cursor: default;
-}*/
 .progress-bar {
   background: #f0f0f0;
   height: 12px;
@@ -448,7 +390,6 @@ article .icon {
   opacity: 1;
 }
 
-/* Additional styling for the project-hover-info */
 .project-hover-info h2 {
   text-align: center;
   padding: 10px;
@@ -531,58 +472,6 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
-
-/* Progress Bar 
-
-#progress-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-.outer {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  padding: 20px;
-  margin-top: 50px;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-.inner {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-#number {
-  font-weight: 1000px;
-  color: black;
-}
-circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: anim 2s linear forwards;
-}
-svg {
-  position: absolute;
-  top: 185px;
-  left: 1px;
-}
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 165; /* Formula: 472-472x0.65*/
 
 /*Footer Section*/
 footer {
