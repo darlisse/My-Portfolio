@@ -72,6 +72,7 @@
 }
 
 @media screen and (max-width: 600px) {
+  
   #contact,
   footer {
     height: 40vh;
@@ -121,7 +122,7 @@
   }
 
   .section__pic-container {
-    width: auto;
+    width: 300%;
     height: 46vw;
     justify-content: center;
   }
@@ -173,4 +174,5 @@
     height: 24rem;
     width: 15rem;
   }
+
 }
