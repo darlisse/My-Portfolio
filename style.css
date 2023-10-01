@@ -190,7 +190,6 @@ section {
 .section_pic-container {
   display: flex;
   height: 400px;
-
   margin: auto 0;
 }
 .section_text {
