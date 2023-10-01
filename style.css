@@ -459,9 +459,6 @@ section {
   gap: 0.5rem;
   margin: 1rem;
 }
-.contact-icon {
-  cursor: default;
-}
 .contact-info-container {
   font-size: larger;
 }
