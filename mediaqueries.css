@@ -47,32 +47,30 @@
     margin: 0 auto 2rem;
   }
   .about-pic {
-  border-radius: 2rem;
-  height: 80%;
-  width: 80%;
-}
+    border-radius: 2rem;
+    height: 80%;
+    width: 80%;
+  }
 
   .about-containers {
     margin-top: 0;
   }
   #projects {
-    margin: 2rem; 
+    margin: 2rem;
   }
 
   .project-details-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .project {
-    width: calc(50% - 1rem); 
+    width: calc(50% - 1rem);
   }
-
 }
 
 @media screen and (max-width: 600px) {
-  
   #contact,
   footer {
     height: 40vh;
@@ -145,15 +143,15 @@
   .project-details-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /
+    gap: 1rem;
   }
 
   .project {
-    width: calc(50% - 1rem); 
+    width: calc(50% - 1rem);
   }
 
   .project:nth-child(odd) {
-    width: 100%; 
+    width: 100%;
   }
 
   .project-img {
@@ -174,5 +172,4 @@
     height: 24rem;
     width: 15rem;
   }
-
 }
