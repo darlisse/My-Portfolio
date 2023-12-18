@@ -50,24 +50,28 @@
     border-radius: 2rem;
     height: 80%;
     width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
+}
 
-  .about-containers {
-    margin-top: 0;
-  }
-  #projects {
-    margin: 2rem;
-  }
+.about-containers {
+  margin-top: 0;
+}
+#projects {
+  margin: 2rem;
+}
 
-  .project-details-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+.project-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-  .project {
-    width: calc(50% - 1rem);
-  }
+.project {
+  width: calc(50% - 1rem);
 }
 
 @media screen and (max-width: 600px) {

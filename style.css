@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;
   background-image: url("./assets/pexels-johannes-plenio-1103970.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +39,9 @@ nav,
   font-size: 1.5rem;
   position: sticky;
   top: 0;
+  opacity: 0.7;
+  z-index: 1;
+  /*background-color: #c1d8c3;*/
 }
 
 nav {
@@ -101,6 +104,9 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  background-color: #f2ffe9;
+  opacity: 0.8;
+  border-radius: 1rem;
 }
 
 .menu-links a {
@@ -192,6 +198,25 @@ section {
   height: 400px;
   margin: auto 0;
 }
+.section_pic-container img {
+  --f: 0.1; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
+
+  --_f: calc(100% * var(--f) / (1 + var(--f)));
+  --_a: calc(90deg * var(--f));
+  width: 300px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t, rotateY(var(--_a)));
+  transition: 0.5s;
+  cursor: pointer;
+}
+img:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t: translateX(calc(-1 * var(--_f))) rotateY(calc(-1 * var(--_a)));
+}
+
 .section_text {
   align-self: center;
   text-align: center;
