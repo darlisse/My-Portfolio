@@ -9,9 +9,10 @@
 
 body {
   font-family: "Helvetica", sans-serif;
-  background-image: url("./assets/pexels-johannes-plenio-1103970.jpg");
+  /*background-image: url("./assets/pexels-johannes-plenio-1103970.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
+  background-color: #004643;
 }
 
 html {
@@ -211,10 +212,12 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 100vh;
-  margin: 0 10rem;
+  /*margin: 0 10rem;*/
+  margin: 0;
   box-sizing: border-box;
   min-height: fit-content;
 }
+
 .section-container {
   display: flex;
 }
@@ -231,9 +234,9 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 83vh;
 }
-#profile::before {
+/*#profile::before {
   content: "";
   position: absolute;
   top: 0;
@@ -253,19 +256,19 @@ section {
   100% {
     background-position: 100% 50%;
   }
-}
+}*/
 .section_pic-container {
   display: flex;
-  height: 400px;
+  height: 350px;
   margin: auto 0;
 }
 .section_pic-container img {
-  --f: 0.1; /* the parallax factor (the smaller the better) */
-  --r: 10px; /* radius */
+  --f: 0.1;
+  --r: 10px;
 
   --_f: calc(100% * var(--f) / (1 + var(--f)));
   --_a: calc(90deg * var(--f));
-  width: 300px; /* the image size */
+  width: 250px;
   aspect-ratio: calc(1 + var(--f));
   object-fit: cover;
   clip-path: inset(0 var(--_f) 0 0 round var(--r));
@@ -282,15 +285,19 @@ img:hover {
   align-self: center;
   text-align: center;
 }
-.section_text_p {
-  font-weight: 600;
-}
+
 .section_text_p1 {
   text-align: center;
+  color: #abd1c6;
 }
 .section_text_p2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  color: #abd1c6;
+}
+.section_text_p3 {
+  text-align: center;
+  color: #0f3433;
 }
 .container {
   display: inline-block;
@@ -369,10 +376,17 @@ img:hover {
 /*About Section*/
 #about {
   position: relative;
+  background: #abd1c6;
 }
 
 .text-container {
   font-size: larger;
+  padding: 0 11%;
+}
+.text-container p {
+  padding: 2% 0 2% 0;
+  color: #abd1c6;
+  background-color: #004643;
 }
 .about-details-container {
   justify-content: center;
@@ -388,7 +402,7 @@ img:hover {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: palevioletred;
+  background: #e8e4e6;
 
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
@@ -408,6 +422,7 @@ img:hover {
 .section-container {
   gap: 4rem;
   height: 75%;
+  margin: 0 15vh;
 }
 
 .about-pic {
@@ -422,20 +437,20 @@ img:hover {
   height: 145vh;
 }
 .experience-details-container {
-  padding: 1vh;
+  padding: 3vh;
+  margin: 0 15vh;
 }
 
 .progress-bar {
-  background: #f0f0f0;
+  background: #004643;
   height: 12px;
   border-radius: 6px;
-  margin-top: 5px;
 }
 
 .progress {
   height: 100%;
   border-radius: 6px;
-  background: #007acc;
+  background: #a1662f;
   transition: width 1s ease;
 }
 
@@ -451,9 +466,12 @@ img:hover {
 /*Projects Section*/
 
 #projects {
+  margin: 0;
+  padding-left: 0;
   padding-bottom: 20vh;
   position: relative;
   height: fit-content;
+  background-color: #abd1c6;
 }
 .project-details-container {
   display: grid;
@@ -462,7 +480,7 @@ img:hover {
 }
 .project {
   position: relative;
-  margin: 0;
+
   transition: transform 0.2s;
   cursor: pointer;
 }
@@ -546,13 +564,13 @@ img:hover {
   flex-direction: column;
 }
 .contact-info-upper-container {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   border-radius: 1rem;
   border-color: rgb(163, 163, 163);
-  background: rgb(219, 112, 147);
-  margin: 2rem;
-  padding: 0.5rem;
+  background: #e8e4e6;
+  margin: 5rem 25rem;
 }
 .contact-info-container {
   display: flex;
@@ -560,12 +578,7 @@ img:hover {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
-}
-.contact-info-container {
-  font-size: larger;
-}
-.email-icon {
-  height: 2.5rem;
+  font-size: 15px;
 }
 
 /*Footer Section*/
@@ -576,7 +589,7 @@ footer {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 26vh;
+  height: 15vh;
   background-color: black;
   opacity: 0.8;
   z-index: -1;
