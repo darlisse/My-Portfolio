@@ -381,7 +381,7 @@ img:hover {
 
 .text-container {
   font-size: larger;
-  padding: 0 11%;
+  padding: 0 10%;
 }
 .text-container p {
   padding: 2% 0 2% 0;
@@ -520,8 +520,8 @@ img:hover {
 }
 .project-img {
   border-radius: 1rem;
-  width: 40%;
-  height: 23rem;
+  width: 90%;
+  height: 25rem;
 }
 .project-img_1 {
   border-radius: 1rem;
@@ -572,6 +572,7 @@ img:hover {
   background: #e8e4e6;
   margin: 5rem 25rem;
 }
+
 .contact-info-container {
   display: flex;
   align-items: center;
