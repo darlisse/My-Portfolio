@@ -403,7 +403,6 @@ img:hover {
   padding: 1.5rem;
   flex: 1;
   background: #e8e4e6;
-
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -435,13 +434,16 @@ img:hover {
 #experience {
   position: relative;
   height: 145vh;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .experience-details-container {
   padding: 3vh;
   margin: 0 15vh;
 }
 
-.progress-bar {
+/*.progress-bar {
   background: #004643;
   height: 12px;
   border-radius: 6px;
@@ -461,6 +463,16 @@ img:hover {
   transform: translateY(-50%);
   color: #000;
   font-weight: bold;
+}*/
+
+.experience-sub-title{
+  margin-bottom: 12px;
+}
+
+.skill-container p{
+  font-size: 15px;
+  color: #000;
+  margin: 5px 0;
 }
 
 /*Projects Section*/
