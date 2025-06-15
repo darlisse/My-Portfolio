@@ -37,7 +37,7 @@ nav {
   gap: 1rem;
   list-style: none;
   font-size: 1.5rem;
-  position: sticky;
+  /*position: sticky;*/
   top: 0;
   opacity: 0.7;
   z-index: 1;
@@ -52,9 +52,8 @@ nav {
   width: 20rem;
 }
 .nav-links {
-  position: absolute;
-  top: 50%;
-  left: 75%;
+  top: -40%;
+  right: 75%;
   transform: translate(-50%, -50%);
   display: flex;
   li {
@@ -234,7 +233,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 83vh;
+  height: 75vh;
 }
 /*#profile::before {
   content: "";
@@ -307,7 +306,7 @@ img:hover {
   border-right: 3px solid;
   width: 100%;
   overflow: hidden;
-  animation: typing 5s infinite, cursor 0.5s step-end infinite alternate;
+  animation: typing 5s , cursor 0.5s step-end infinite alternate;
 }
 @keyframes cursor {
   50% {
@@ -420,7 +419,7 @@ img:hover {
 }
 .section-container {
   gap: 4rem;
-  height: 75%;
+  height: 50%;
   margin: 0 15vh;
 }
 
@@ -571,6 +570,7 @@ img:hover {
 /*Contact Section*/
 #contact {
   display: flex;
+  height: 20vh;
   justify-content: center;
   text-align: center;
   flex-direction: column;
@@ -581,7 +581,7 @@ img:hover {
   justify-content: center;
   border-radius: 1rem;
   border-color: rgb(163, 163, 163);
-  background: #e8e4e6;
+  /*background: #e8e4e6;*/
   margin: 5rem 25rem;
 }
 
@@ -589,24 +589,29 @@ img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+
+  margin: 1vh;
   font-size: 15px;
 }
 
 /*Footer Section*/
 footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+  justify-content: space-between;
   width: 100%;
-  height: 15vh;
-  background-color: black;
-  opacity: 0.8;
-  z-index: -1;
+  height: 5vh;
+  background: #121212;
+  margin: 0;
 }
+
 footer p {
-  color: white;
+  color: white ;
 }
+
+/*.footer_name {
+  text-align: left;
+}
+
+.footer_arr {
+  text-align: right;
+}*/
